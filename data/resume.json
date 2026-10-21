@@ -7,7 +7,7 @@
   "email": "sandeepkumar051194@gmail.com",
   "linkedin": "https://www.linkedin.com/in/sandyrox",
   "github": "",
-  "summary": "Senior Software Engineer with 7+ years of experience building fintech and lending platforms end to end with Node.js, NestJS, React.js, TypeScript, PostgreSQL, and AWS. Led greenfield delivery of a multi-product trade finance suite and cut loan processing times from 6 minutes to 1–2 minutes through asynchronous service design.",
+  "summary": "Senior Software Engineer with 7+ years of experience building fintech and lending platforms end to end with Node.js, NestJS, React.js, TypeScript, PostgreSQL, and AWS. Led greenfield delivery of a multi-product trade finance suite.",
   "skills": [
     {
       "category": "Languages & Frameworks",
@@ -147,7 +147,7 @@
         "Developed a scalable document management system with pre-signed S3 uploads, ZIP extraction, structured storage, and document processing flows.",
         "Built AI-powered lending document workflows using Amazon Textract and Bedrock to extract, classify, and process lending documents from a single upload.",
         "Improved system throughput and reliability by integrating FIFO and Standard SQS queues, caching strategies, and CI/CD pipelines.",
-        "Reduced processing response times from 6 minutes to 1–2 minutes through asynchronous service design and performance-focused backend optimization.",
+        "Reduced API response times from 6 minutes to 1–2 minutes through asynchronous service design and performance-focused backend optimization.",
         "Integrated external APIs and built cloud-native business modules supporting loan processing and reporting workflows.",
         "Customized finance automation in NetSuite using SuiteScript and Restlets for journal entries and data synchronization.",
         "Led a cross-functional team of 4 developers, conducted code reviews, and ensured quality, delivery, and maintainable engineering practices."
