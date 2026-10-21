@@ -1,0 +1,20 @@
+{
+  "name": "latex-resume",
+  "version": "1.0.0",
+  "description": "Node.js project for generating a LaTeX resume from JSON data",
+  "main": "scripts/build-resume.js",
+  "scripts": {
+    "build": "node scripts/build-resume.js",
+    "pdf": "node scripts/build-resume.js --pdf",
+    "clean": "node scripts/clean.js",
+    "pdf:backend": "node scripts/build-resume.js --pdf --variant backend",
+    "pdf:fullstack": "node scripts/build-resume.js --pdf --variant fullstack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "handlebars": "^4.7.9"
+  }
+}

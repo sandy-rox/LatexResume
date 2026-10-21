@@ -1,0 +1,159 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,top=0.28in,bottom=0.28in,left=0.28in,right=0.28in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  pdftitle={%
+{{latex name}} \textendash{} {{latex title}}%
+},
+  pdfauthor={%
+{{latex name}}%
+},
+  pdfsubject={%
+{{latex headline}}%
+}
+}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[sfdefault]{inter}
+
+\definecolor{headernavy}{HTML}{203B6A}
+\definecolor{sectionblue}{HTML}{2E78BF}
+\newcommand{\contactlink}[2]{\href{#1}{\textcolor{sectionblue}{\underline{#2}}}}
+
+\pagestyle{empty}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.25em, topsep=0.02em, itemsep=0.04em, parsep=0pt, partopsep=0pt}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+\titleformat{\section}{\large\bfseries\color{sectionblue}}{}{0em}{\MakeUppercase}[\color{black}\titlerule]
+\titlespacing{\section}{0pt}{0.7em}{0.25em}
+
+\begin{document}
+\raggedright
+
+\noindent
+\begin{minipage}[b]{0.54\textwidth}
+\raggedright
+\color{headernavy}
+{\Huge \hspace*{-0.05em}\textbf{%
+{{latex name}}%
+}}\\[0.15em]
+{\Large%
+{{latex title}}%
+}\\[0.22em]
+{{#if headline}}{\fontsize{9.3pt}{11pt}\selectfont%
+{{latex headline}}%
+}{{/if}}
+\end{minipage}
+\hfill
+\begin{minipage}[b]{0.42\textwidth}
+\small
+\raggedleft
+\begin{tabular}[b]{@{}r@{}}
+{{#if phone}}
+\textbf{Phone:}\hspace{0.3em}\contactlink{{tel phone}}{%
+{{latex phone}}%
+} \\
+{{/if}}
+{{#if location}}
+\textbf{Location:}\hspace{0.3em}{{latex location}} \\
+{{/if}}
+{{#if linkedin}}
+\textbf{LinkedIn:}\hspace{0.3em}\contactlink{{url linkedin}}{%
+{{linktext linkedin}}%
+} \\
+{{/if}}
+{{#if github}}
+\textbf{GitHub:}\hspace{0.3em}\contactlink{{url github}}{%
+{{linktext github}}%
+} \\
+{{/if}}
+{{#if email}}
+\textbf{Email:}\hspace{0.3em}\contactlink{{mailto email}}{%
+{{latex email}}%
+}
+{{/if}}
+\end{tabular}
+\end{minipage}
+
+\vspace{0.05em}
+
+{{#if summary}}
+\section*{Summary}
+{{latex summary}}
+{{/if}}
+
+{{#if skills.length}}
+\section*{Skills}
+\begingroup
+\fontsize{10.5pt}{12.2pt}\selectfont
+\renewcommand{\arraystretch}{1.02}
+{{#each skills}}
+\begin{tabularx}{\textwidth}{@{}p{0.27\textwidth}@{\hspace{0.2em}}Y@{}}
+\textbf{%
+{{latex category}}:%
+} & {{#each items}}{{latex this}}{{#unless @last}}, {{/unless}}{{/each}}
+\end{tabularx}
+\vspace{-0.05em}
+{{/each}}
+\endgroup
+{{/if}}
+
+{{#if experience.length}}
+\section*{Experience}
+{{#each experience}}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r@{}}
+\textbf{%
+{{latex role}}%
+} & {{latex startDate}} -- {{latex endDate}}\\
+\end{tabular*}
+\textbf{\textit{%
+{{latex company}}%
+}}{{#if location}}, {{latex location}}{{/if}}{{#if companySummary}} -- \textit{%
+{{latex companySummary}}%
+}{{/if}}\\
+{{#if techStack.length}}\textbf{Tech Stack:} {{#each techStack}}{{latex this}}{{#unless @last}}, {{/unless}}{{/each}}{{/if}}\par
+\begin{itemize}
+{{#each highlights}}
+    \item {{latex this}}
+{{/each}}
+\end{itemize}
+\par\addvspace{\baselineskip}
+{{/each}}
+{{/if}}
+
+{{#if projects.length}}
+\section*{Projects}
+{{#if projectsTechStack.length}}\textbf{Tech Stack:} {{#each projectsTechStack}}{{latex this}}{{#unless @last}}, {{/unless}}{{/each}}{{/if}}\par
+\begin{itemize}
+{{#each projects}}
+    \item {{#if name}}\textbf{%
+{{latex name}}%
+} {{/if}}{{latex description}}
+{{/each}}
+\end{itemize}
+{{/if}}
+
+{{#if education.length}}
+\section*{Education}
+{{#each education}}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}l r@{}}
+\textbf{%
+{{latex degree}}%
+} & {{latex startDate}} -- {{latex endDate}}\\
+\end{tabular*}
+\begin{itemize}
+    \item {{latex institution}}{{#if location}} ({{latex location}}){{/if}}
+\end{itemize}
+{{/each}}
+{{/if}}
+
+\end{document}

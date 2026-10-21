@@ -1,0 +1,224 @@
+{
+  "name": "Sandeep Kumar",
+  "title": "Senior Software Engineer",
+  "headline": "NODE.JS | NESTJS | REACT.JS | TYPESCRIPT | POSTGRESQL | AWS",
+  "phone": "+91 90501-84754",
+  "location": "Open to Pan-India & Remote",
+  "email": "sandeepkumar051194@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/sandyrox",
+  "github": "",
+  "summary": "Senior Software Engineer with 7+ years of experience building fintech and lending platforms end to end with Node.js, NestJS, React.js, TypeScript, PostgreSQL, and AWS. Led greenfield delivery of a multi-product trade finance suite and cut loan processing times from 6 minutes to 1–2 minutes through asynchronous service design.",
+  "skills": [
+    {
+      "category": "Languages & Frameworks",
+      "items": [
+        "Node.js",
+        "NestJS",
+        "Express.js",
+        "React.js",
+        "TypeScript",
+        "JavaScript",
+        "REST APIs",
+        "Microservices",
+        "Zod",
+        "React Query",
+        "Zustand"
+      ]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "items": [
+        "AWS ECS",
+        "EC2",
+        "Lambda",
+        "S3",
+        "SQS",
+        "SNS",
+        "CloudFront",
+        "Docker",
+        "CI/CD",
+        "Git",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "category": "Databases & ORM",
+      "items": [
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Drizzle ORM",
+        "TypeORM",
+        "PL/v8"
+      ]
+    },
+    {
+      "category": "Architecture & Practices",
+      "items": [
+        "System Design",
+        "Greenfield Development",
+        "Multi-Product Architecture",
+        "Role-Based Access Control",
+        "Workflow Automation",
+        "Performance Optimization",
+        "Agile Development"
+      ]
+    },
+    {
+      "category": "Tools & Testing",
+      "items": [
+        "Jest",
+        "Mocha",
+        "JMeter",
+        "Postman",
+        "Git",
+        "Jira",
+        "VS Code",
+        "Cursor",
+        "Copilot",
+        "Claude",
+        "Codex"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Incomlend Pvt. Ltd.",
+      "role": "Senior Software Engineer",
+      "startDate": "Feb 2026",
+      "endDate": "Present",
+      "companySummary": "Global trade and invoice finance platform for exporters, importers, and investors.",
+      "techStack": [
+        "Node.js",
+        "Express.js",
+        "NestJS",
+        "TypeScript",
+        "React.js",
+        "AWS ECS",
+        "S3",
+        "Docker",
+        "GitHub Actions",
+        "Jest",
+        "JMeter",
+        "PostgreSQL",
+        "Cursor",
+        "GitHub Copilot",
+        "Claude",
+        "Codex"
+      ],
+      "highlights": [
+        "Led end-to-end design and development of a multi-product fintech platform suite from scratch, architecting 7 production-grade frontend and backend repositories using NestJS, Express, React, TypeScript, PostgreSQL, and AWS.",
+        "Built the Broker Portal covering RM referral-based agent registration, onboarding, KYC, agreement lifecycle, lead generation, commission tracking, and e-wallet withdrawals.",
+        "Developed the Investor Portal for portfolio tracking, invoice-level exposure, ROI monitoring, and wallet transactions, and the Reporting Portal giving internal teams and RMs centralized dashboards for deals, business metrics, and portfolio performance.",
+        "Built reusable backend services and shared APIs for onboarding, KYC, agreement workflows, wallet transactions, investor operations, and reporting.",
+        "Designed PostgreSQL schemas, entity relationships, and role-based workflow logic across broker, investor, reporting, wallet, and commission domains.",
+        "Developed responsive React frontends with modular architecture, reusable components, and scalable query/state management."
+      ]
+    },
+    {
+      "company": "Biz2X / Biz2Credit Pvt. Ltd.",
+      "role": "Senior Software Engineer",
+      "startDate": "Nov 2022",
+      "endDate": "Nov 2025",
+      "companySummary": "Online lending platform funding small businesses across the US.",
+      "techStack": [
+        "Node.js",
+        "Express.js",
+        "NestJS",
+        "TypeScript",
+        "React.js",
+        "PostgreSQL",
+        "AWS Lambda",
+        "S3",
+        "SQS",
+        "EFS",
+        "Amazon Textract",
+        "Amazon Bedrock",
+        "Docker",
+        "Jest",
+        "JMeter",
+        "Cursor",
+        "GitHub Copilot",
+        "Claude"
+      ],
+      "highlights": [
+        "Designed and implemented automation workflows for third-party report pulling, verifier-based application routing, and early-stage loan rejection, significantly reducing manual effort and improving processing efficiency.",
+        "Built secure microservices and REST APIs with encryption-based inter-service communication for internal lending workflows.",
+        "Developed a scalable document management system with pre-signed S3 uploads, ZIP extraction, structured storage, and document processing flows.",
+        "Built AI-powered lending document workflows using Amazon Textract and Bedrock to extract, classify, and process lending documents from a single upload.",
+        "Improved system throughput and reliability by integrating FIFO and Standard SQS queues, caching strategies, and CI/CD pipelines.",
+        "Reduced processing response times from 6 minutes to 1–2 minutes through asynchronous service design and performance-focused backend optimization.",
+        "Integrated external APIs and built cloud-native business modules supporting loan processing and reporting workflows.",
+        "Customized finance automation in NetSuite using SuiteScript and Restlets for journal entries and data synchronization.",
+        "Led a cross-functional team of 4 developers, conducted code reviews, and ensured quality, delivery, and maintainable engineering practices."
+      ]
+    },
+    {
+      "company": "Saralweb / TA Netgables Pvt. Ltd.",
+      "role": "Software Engineer",
+      "startDate": "Sep 2019",
+      "endDate": "Nov 2022",
+      "companySummary": "B2B GPS tracking, attendance, and video surveillance platform.",
+      "techStack": [
+        "Node.js",
+        "Express.js",
+        "JavaScript",
+        "PostgreSQL",
+        "PL/v8",
+        "AWS EC2",
+        "Docker",
+        "Linux",
+        "Mocha"
+      ],
+      "highlights": [
+        "Developed core modules for payroll, invoicing, attendance, employee tracking, and resource allocation in a B2B GPS tracking platform.",
+        "Built high-performance Node.js APIs and PL/v8 PostgreSQL functions for large-scale data operations and business workflows.",
+        "Automated bulk data uploads through Excel-based processing and integrated third-party APIs to synchronize partner and employee records.",
+        "Created Linux services and cron-based schedulers for nightly data syncs and background processing.",
+        "Implemented real-time data replication across distributed environments using custom synchronization protocols.",
+        "Added unit testing and backend quality checks to strengthen stability across server-client interactions.",
+        "Worked closely with cross-functional teams on feature delivery, backend architecture planning, and production issue resolution."
+      ]
+    }
+  ],
+  "projectsTechStack": [
+    "Node.js",
+    "NestJS",
+    "Express.js",
+    "TypeScript",
+    "React.js",
+    "AWS",
+    "PostgreSQL",
+    "Docker"
+  ],
+  "projects": [
+    {
+      "name": "Lazymail",
+      "description": "Built an email automation tool using predefined templates to standardize and speed up operational communication."
+    },
+    {
+      "name": "AI-Powered Chatbot",
+      "description": "Implemented LLM prompt engineering, model configuration, and secure OpenAI API integration for business use cases."
+    },
+    {
+      "name": "Internal Automation Utilities",
+      "description": "Developed backend tools and utilities for workflow acceleration, API testing, reporting support, and operational automation."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Thapar Institute of Engineering and Technology",
+      "location": "Patiala, Punjab",
+      "degree": "Master of Computer Applications",
+      "startDate": "2017",
+      "endDate": "2019"
+    },
+    {
+      "institution": "JCD Memorial College",
+      "location": "Sirsa, Haryana",
+      "degree": "Bachelor of Computer Applications",
+      "startDate": "2014",
+      "endDate": "2017"
+    }
+  ]
+}
